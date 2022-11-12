@@ -1,0 +1,50 @@
+
+
+{% extends 'base.html'%}
+{% block head %}
+    <h1>CalcGCSE</h1>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+    <br></br>
+    <table class= "table table-dark table-striped" width="400">
+        <div><caption>Full threshold</caption></div>
+        
+        <thead>
+            <tr>
+                <th style="width:40px;">Code</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+    
+                <td style="width:42px;">{{search_string}}</td>
+                <td>{{A}}</td>
+                <td>{{B}}</td>
+                <td>{{C}}</td>
+                <td>{{D}}</td>
+                <td>{{E}}</td>
+                
+                
+            </tr>
+        </tbody>
+
+
+    </table>
+    </body>
+
+    
+
+{% endblock %}
+
+

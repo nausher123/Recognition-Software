@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/">CalcScore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'olevel' %}">GCSE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'alevel' %}">Alevel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sat' %}">SAT</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  <center>
+  <h1 class=" head">CalcScore</h1>
+  <div class="text">
+    A fast and error-free way to calculate your GCSE, SAT and Alevel past paper scores.
+  </div>
+  <div class="text">
+    We use official Cambridge thresholds and College Board SAT curves to provide an accurate representation of your preparation and calculate your grade.
+  </div>
+  <div class="text">
+    Click below to calculate your scores
+  </div>
+  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a class="text" style="font-weight: bold;" href="{% url 'sat' %}">SAT</a>
+      </div>
+      <div class="col" >
+        <a class="text" style="font-weight: bold;" href="{% url 'olevel' %}">GCSE</a>
+      </div>
+      <div class="col">
+        <a class="text" style="font-weight: bold;" href="{% url 'alevel' %}">A-level</a>
+      </div>
+    </div>
+  </div>
+  </center>
+  <br></br>
+  <div class="text">
+    <p class="z">
+    Why use CalcScore?
+    </p>
+  </div>
+  <div class="body">
+    <p class="fw-normal">As exams come close millions of students around the world practice using past examinations as a way of preparing themselves. CalcScore simply provides students a fast way to calculate and access thresholds on the basis of which they can see what grade they would get on their performance and evaluate their preperation. It allows students to focus on preparation while leaving the calculation to our tool.
+    </p> 
+  </div>
+    
+  
+<style>
+   .head {
+    
+    margin: 50px;
+    font-size: 70px;
+    margin-top: 210px;   
+    
+  
+
+  }
+
+  .text {
+    font-size: 25px;
+    font-weight: bold;
+    
+    
+
+    
+
+  }
+  .z{
+    margin-top: 220px;
+    font-size: 27px;
+    margin-left: 10px;
+    
+
+  }
+  .body{
+    margin-top: 17px;
+    font-size: 19px;
+    font-family: arial;
+    margin: 10px;
+  }
+</style>
+
+</html>
